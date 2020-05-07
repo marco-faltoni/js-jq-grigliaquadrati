@@ -17,9 +17,22 @@
     margin: auto;
 }
 
-.square {
+.square, .square2 {
     width: 100px;
     height: 100px;
     border: 1px solid blue;
     float: left;
+    text-align: center;
+}
+
+.red {
+    color: red;
+}
+
+.black {
+    color: black;
+}
+
+.green {
+    color: green;
 }

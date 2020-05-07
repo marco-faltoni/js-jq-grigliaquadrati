@@ -20,8 +20,6 @@ do {
 $('.square').each(function(){
     var numeri_casuali = genera_random(0, 10);
     var classe = colori(numeri_casuali);
-    // numeri_quadrati.push(numeri_casuali);
-    // var indice = $(this).index();
     $(this).text(numeri_casuali).addClass(classe);
 });
 
@@ -43,5 +41,5 @@ function colori(numero) {
 
 // con questa funzione genero un numero random con valori che do io ogni volta
 function genera_random(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
